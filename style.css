@@ -1,0 +1,61 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Amiri', serif;
+font-family: 'Square Peg', cursive;
+}
+
+.container {
+  border: 2px solid white;
+  padding: 10px;
+  text-align: center;
+  max-width: 90%;
+}
+
+button {
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+h2 {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid white;
+  font-weight: normal;
+}
+
+#randomText {
+  margin-top: 20px;
+  color: white;
+}
+
+#randomImage {
+  margin-top: 20px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* استهداف شاشات الهواتف */
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 95%; /* تحديد عرض أقل للحاوية */
+  }
+
+  button {
+    font-size: 18px; /* تحديد حجم الخط أصغر */
+  }
+
+  #randomImage {
+    width: 200px; /* تحديد عرض أصغر للصورة */
+    height: 200px; /* تحديد ارتفاع أصغر للصورة */
+  }
+}
